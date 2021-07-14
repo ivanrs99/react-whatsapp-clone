@@ -1,0 +1,374 @@
+.chat-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    background-image: url("./images/fondo.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.chat-header {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex: none;
+    order: 1;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 59px;
+    padding: 10px 16px;
+}
+
+.chat-bottom {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    flex: none;
+    order: 3;
+    background-color: #f6f6f6;
+    min-height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    max-width: 100%;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.chat-conver {
+    position: relative;
+    flex: 1 1 0;
+    order: 2;
+}
+
+.user-header {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-header > img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    image-rendering:-webkit-optimize-contrast; /* Safari         */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;
+}
+
+.user-header > span {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.icons-header {
+    flex: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon-header {
+    cursor: pointer;
+    color: gray;
+    margin: 0 8px;
+}
+
+.icon-group {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    display: flex;
+    color: gray;
+    align-items: center;
+}
+
+.icon-bottom {
+    margin-right: 8px;
+    width: 26px!important;
+    height: 42px!important;
+}
+
+.clip {
+    transform: scaleX(-1) rotate(-45deg);
+}
+
+.text-bar {
+    padding: 9px 12px 11px;
+    margin: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 21px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: 10rem;
+    min-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    outline: none;
+}
+
+.text-line {
+    padding-right: 0;
+    cursor: text;
+    position: relative;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.text {
+    visibility: visible;
+    left: 4px;
+    top: 0;
+    position: absolute;
+    bottom: 2px;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 20px;
+    pointer-events: none;
+    color: #999;
+}
+
+.text-editable {
+    padding-right: 2px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    min-height: 20px;
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 15px;
+    font-weight: 400;
+    color: #4a4a4a;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    outline: none;
+    width: 100%;
+}
+
+.micro-icon {
+    color: #999;
+    margin-right: 5px;
+    width: 26px!important;
+    height: 42px!important;
+}
+
+.cont-conver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.relleno {
+    flex: 1 1 auto;
+    min-height: 12px;
+}
+
+.cont-p {
+    padding-left: 0;
+    padding-bottom: 8px;
+    flex: 0 0 auto;
+}
+
+.cont-fecha {
+    position: relative;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fecha {
+    position: relative;
+    padding: 5px 12px 6px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+    background-color: rgba(225, 245, 254, 0.92);
+    border-radius: 7.5px;
+    box-sizing: border-box;
+    display: inline-block;
+    flex: none;
+    max-width: 100%!important;
+    font-size: 12.5px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.prot-cont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.prot-cont2 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    flex: none;
+    max-width: 100%!important;
+    font-size: 12.5px;
+    line-height: 21px;
+    color:rgba(0, 0, 0, 0.96);
+    margin-bottom: 0;
+    background-color: rgba(255, 245, 196, 0.95);
+    padding: 5px 12px 6px;
+    text-align: center;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+
+.lock {
+    margin-right: 4px;
+    margin-top: 4px;
+    display: inline-block;
+    vertical-align: top;
+    color: rgba(0, 0, 0, 0.45);
+    width: 13px!important;
+    height: 15px!important;
+}
+
+.msg-yo {
+    padding-left: 9%;
+    padding-right: 9%;
+    margin-bottom: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.msg-ella {
+    padding-left: 9%;
+    padding-right: 9%;
+    margin-bottom: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.msg-cont2 {
+    margin-bottom: 0;
+    border-radius: 7.5px;
+    max-width: 65%;
+    position: relative;
+    flex: none;
+    font-size: 14.2px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.pico-ella {
+    color: #fff;
+    left: -8px;
+    position: absolute;
+    top: -2px;
+    display: block;
+    width: 8px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.pico-yo {
+    color: #dcf8c6;
+    right: -8px;
+    position: absolute;
+    top: -2px;
+    display: block;
+    width: 8px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.pico-yo > svg {
+    width: 8;
+    height: 13;
+    overflow: hidden;
+}
+
+.pico-ella > svg {
+    width: 8;
+    height: 13;
+    overflow: hidden;
+}
+
+.msg-cont3 {
+    border-radius: 7.5px;
+    border-top-right-radius: 0;
+    background-color: #dcf8c6;
+    position: relative;
+    padding: 6px 7px 8px 9px;
+    box-sizing: border-box;    
+}
+
+.msg-cont3-ella {
+    border-radius: 7.5px;
+    border-top-left-radius: 0;
+    background-color: #fff;
+    position: relative;
+    padding: 6px 7px 8px 9px;
+    box-sizing: border-box;    
+}
+
+.msg-text {
+    position: relative;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.separator {
+    width: 66px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.msg-hour {
+    position: relative;
+    float: right;
+    margin: -10px 0 -5px 4px;
+    height: 15px;
+    font-size: 11px;
+    line-height: 15px;
+    color:rgba(0, 0, 0, 0.45);
+    white-space: nowrap;
+}
+
+.msg-hour > span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.msg-tick {
+    margin-left: 3px;
+    display: inline-block;
+    color: #4fc3f7;    
+    
+}
+
+.tick-icon {
+    width: 17px!important;
+    height: 16px!important;
+    display: block;
+}

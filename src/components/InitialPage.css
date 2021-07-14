@@ -1,0 +1,83 @@
+.initial_container {
+    width: 100%;
+    height: 100%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.initial_container::after {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    border-top: 6px solid #4adf83;
+}
+
+.principal {
+    text-align: center;
+    width: 80%;
+    max-width: 460px;
+    margin-top: -67px;
+}
+
+.image {
+    background-image: url('./images/intro.jpg');
+    background-size: cover;
+    margin: 0 auto;
+    width: 356px;
+    height: 355px;
+}
+
+@media screen and (max-height: 760px) {
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.p_text > h1 {
+    margin-top: 28px;
+    font-size: 36px;
+    font-weight: 300;
+    color: #525252;
+}
+
+.ps_text {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.pt_text {
+    margin-top: 34px;
+}
+
+.line_text {
+    margin-bottom: 34px;
+    background-color: rgba(0, 0, 0, 0.08);
+    height: 1px;
+}
+
+.last {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.c_icon {
+    color: #919191;
+}
+
+.last_div {
+    margin-left: 5px;
+}
+
+.last_div > a {
+    text-decoration: none;
+    color: #07bc4c;
+}

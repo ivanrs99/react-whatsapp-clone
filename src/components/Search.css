@@ -1,0 +1,73 @@
+.search-container {
+    flex: none;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 49px;
+}
+
+.search-container::after {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    content: "";
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.btnSearch {
+    position: absolute;
+    color: #919191;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.btnBack {
+    visibility: hidden;
+    position: absolute;
+    color: #33b7f6;
+    top: 0;
+    left: 0;
+}
+
+button {
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 12px;
+    left: 24px;
+    z-index: 100;
+    width: 24px;
+    height: 24px;
+}
+
+button:active > .btnSearch {
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    transform: scale(.8) rotate(225deg);
+}
+
+.textChat {
+    position: absolute;
+    right: 24px;
+    left: 77px;
+    top: 13px;
+    color: #999;
+    font-size: 14px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.lblText {
+    position: absolute;
+    height: 35px;
+    top: 7px;
+    right: 14px;
+    left: 12px;
+    background-color: #fff;
+    border-radius: 18px;
+}

@@ -1,0 +1,46 @@
+.header_container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 59px;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 16px;
+}
+
+.img_cont {
+    flex-grow: 1;
+}
+
+.img {
+    height: 40px;
+    width: 40px;
+}
+
+.profilepic {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    image-rendering:-webkit-optimize-contrast; /* Safari         */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;
+}
+
+.icons_cont {
+    flex:none;
+}
+
+.icons_cont > div {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    color: gray;
+    margin: 0 11px;
+}

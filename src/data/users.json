@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Xiise",
+        "img": "/images/xiise.jpg"
+    },
+    {
+        "name": "Perro Sanchez",
+        "img": "/images/pedrito.jpeg"
+    },
+    {
+        "name": "CR7",
+        "img": "/images/cr7.jpg"
+    },
+    {
+        "name": "Ester Expósito",
+        "img": "/images/ester.jpg"
+    },
+    {
+        "name": "Lionel",
+        "img": "/images/messi.jpg"
+    },
+    {
+        "name": "Arturito",
+        "img": "/images/arturo.jpg"
+    },
+    {
+        "name": "Hannah Montaña",
+        "img": "/images/hannah.jpg"
+    },
+    {
+        "name": "Iron Man",
+        "img": "/images/iron.jpg"
+    },
+    {
+        "name": "Puppi",
+        "img": "/images/dog.jpg"
+    },
+    {
+        "name": "Miau",
+        "img": "/images/cat.png"
+    },
+    {
+        "name": "Groot",
+        "img": "/images/groot.jpeg"
+    },
+    {
+        "name": "Caracoli",
+        "img": "/images/caracoli.jpg"
+    },
+    {
+        "name": "Charmander",
+        "img": "/images/charmander.jpg"
+    }
+]
